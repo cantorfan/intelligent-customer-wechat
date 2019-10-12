@@ -1,0 +1,28 @@
+server:
+  # 端口，必须是80或者443或者域名
+  port: 80
+
+weChat:
+  applet:
+    # accessToken获取地址
+    accessTokenUrl: https://api.weixin.qq.com/cgi-bin/token
+    # 消息推送url
+    messageSendUrl: https://api.weixin.qq.com/cgi-bin/message/custom/send
+    csyhj:
+      appId: # 小程序1 appId
+      secret: # 小程序1 秘钥
+      messagePush:
+        token: # 小程序1 后管消息推送配置的校验token
+        encodingAesKey: # 小程序1 后管消息推送配置的aesKey
+    nxd:
+      appId: # 小程序2 appId
+      secret: # 小程序2 秘钥
+      messagePush:
+        token: # 小程序2 后管消息推送配置的校验token
+        encodingAesKey: # 小程序2 后管消息推送配置的aesKey
+
+threePart:
+  public:
+    testUrl: # 三方客服外网测试地址
+    publicKey: # 三方客服公钥
+    privateKey: # 三方客服私钥
